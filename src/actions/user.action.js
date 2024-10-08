@@ -12,6 +12,8 @@ export const getUser = () => {
     }
 }
 
+// likes
+
 export const addUserLike = (data) => {
     return (dispatch) => {
         return axios

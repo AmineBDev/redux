@@ -7,7 +7,7 @@ const Like = ({ post }) => {
   const user = useSelector((state) => state.userReducer)
   const dispatch = useDispatch()
 
-  const handleLike = () => {
+  const handleLikes = () => {
     const postData = {
       title: post.title,
       author: post.author,
@@ -29,7 +29,7 @@ const Like = ({ post }) => {
 
   return (
     <div>
-      <img onClick={() => handleLike()} src="./icons/clap.png" className="clap" alt="clap" />
+      <img onClick={() => handleLikes()} src="./icons/clap.png" className="clap" alt="clap" />
       <span>{post.likes}</span>
     </div>
   );

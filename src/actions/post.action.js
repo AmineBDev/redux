@@ -47,6 +47,8 @@ export const deletePost = (postId) => {
     }
 }
 
+// likes
+
 export const addPostLike = (data) => {
     return (dispatch) => {
         return axios
