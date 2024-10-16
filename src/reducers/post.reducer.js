@@ -22,8 +22,8 @@ export default function postReducer(state = initialState, action) {
 
         case DELETE_POST:
             return state.filter((post) => post.id !== action.payload);
-        case ADD_POST_LIKE:
 
+        case ADD_POST_LIKE:
             return state.map((post) => {
                 if (post.id === action.payload.id) {
                     return {
