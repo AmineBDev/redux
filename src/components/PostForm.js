@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addPost, getPosts } from "../actions/post.action";
 
 const PostForm = () => {
-  const form = useRef()
+  const form = useRef(null)
   const user = useSelector((state) => state.userReducer)
   const dispatch = useDispatch()
 
@@ -11,6 +11,7 @@ const PostForm = () => {
     e.preventDefault()
 
     const postData = {
+
       author: user.pseudo,
       title: form.current[0].value,
       content: form.current[1].value,
