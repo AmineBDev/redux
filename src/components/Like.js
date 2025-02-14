@@ -9,7 +9,6 @@ const Like = ({ post }) => {
 
   const handleLikes = () => {
     const postData = {
-
       title: post.title,
       author: post.author,
       content: post.content,
